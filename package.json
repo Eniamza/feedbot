@@ -1,0 +1,25 @@
+{
+  "name": "feedbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eniamza/feedbot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eniamza/feedbot/issues"
+  },
+  "homepage": "https://github.com/Eniamza/feedbot#readme",
+  "dependencies": {
+    "axios": "^1.3.6",
+    "dotenv": "^16.0.3",
+    "ethers": "^6.3.0"
+  }
+}
