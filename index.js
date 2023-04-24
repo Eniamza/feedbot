@@ -7,5 +7,5 @@ const { monitorBuyTransactions } = require("./monitor");
   // Run the monitor function every 15 seconds
   setInterval(async () => {
     await monitorBuyTransactions();
-  }, 15000);
+  }, 30);
 })();
