@@ -5,7 +5,7 @@ const config = require("./config");
 const INFURA_API_KEY = process.env.INFURA_PROJECT_ID;
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
-const gifUrl = "https://media.tenor.com/omNd4Vg6gSsAAAAC/minions-despicable-me.gif"
+const gifUrl = config.gifURL
 
 const provider = new ethers.providers.FallbackProvider([
   new ethers.providers.InfuraProvider("homestead", INFURA_API_KEY),
@@ -114,16 +114,18 @@ const fetchAndProcessEvents = async () => {
       });
 
       if (config.features.alertOnBuy && amountInUSD >= config.minimumBuyAmountInUSD) {
-        const message = `🚨 *Buy PAPOI* 🚨
+        const message = `🚨 *Buy CREPE* 🚨
         🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞
         
-  Someone just bought *${amount} PAPOIS* 
+  Someone just bought *${amount} $CREPES 
   💵 ${amountInETH} ETH ($${amountInUSD})
   📥 From: [${from}](https://etherscan.io/address/${from})
   📤 To: [${to}](https://etherscan.io/address/${to})
   🔍 [View on Etherscan](https://etherscan.io/tx/${event.transactionHash})
   💵 Buy From [UniSwap](https://app.uniswap.org/#/swap?outputCurrency=0x556d19ec20f7fffdfbe1a2c2403737ebcded96ca) or [DexTools](https://www.dextools.io/app/en/ether/pair-explorer/0x9505f89b7895c6e2ea4b0c34748caf8d128860ae
-        )`;
+        )
+        
+  🐤 [Click To Tweet This!](http://twitter.com/intent/tweet?text=Someone%20bought%20${amount}%20$CREPE%20s,%20To%20the%20$MOON!.%20Grab%20your%20Bag!%20https://tinyurl.com/mr266jme)`;
 
         console.log("Sending buy alert:", message);
 
