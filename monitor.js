@@ -117,7 +117,7 @@ const fetchAndProcessEvents = async () => {
         const message = `🚨 *Buy CREPE* 🚨
         🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞🥞
         
-  Someone just bought *${amount} $CREPES 
+  Someone just bought ${amount} $CREPES 
   💵 ${amountInETH} ETH ($${amountInUSD})
   📥 From: [${from}](https://etherscan.io/address/${from})
   📤 To: [${to}](https://etherscan.io/address/${to})
