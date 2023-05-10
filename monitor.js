@@ -124,7 +124,7 @@ const fetchAndProcessEvents = async () => {
   🔍 [View on Etherscan](https://etherscan.io/tx/${event.transactionHash})
   💵 Buy From [UniSwap](https://app.uniswap.org/#/swap?outputCurrency=0x556d19ec20f7fffdfbe1a2c2403737ebcded96ca) or [DexTools](https://www.dextools.io/app/en/ether/pair-explorer/0x9505f89b7895c6e2ea4b0c34748caf8d128860ae)
         
-  🐤 [Click To Tweet This!](http://twitter.com/intent/tweet?text=Someone%20bought%20${amount}%20$CREPE%20s,%20To%20the%20$MOON!.%20Grab%20your%20Bag!%20https://tinyurl.com/mr266jme)`;
+  🐤 [Click To Tweet This!](http://twitter.com/intent/tweet?text=Someone%20just%20bought%20${amount}%20%24CREPE%21%20%20%F0%9F%A5%9E%F0%9F%A5%9E%0A%0A%F0%9F%90%B4Buy%20on%20Uniswap%3A%20https%3A%2F%2Fapp.uniswap.org%2F%23%2Fswap%3FoutputCurrency%3D0x556d19ec20f7fffdfbe1a2c2403737ebcded96ca%0A%0A%F0%9F%93%88View%20Chart%3A%20https%3A%2F%2Fwww.dextools.io%2Fapp%2Fen%2Fether%2Fpair-explorer%2F0x9505f89b7895c6e2ea4b0c34748caf8d128860ae%0A%0ATo%20the%20Moon%20%40crepecoineth)`;
 
         console.log("Sending buy alert:", message);
 
