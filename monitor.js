@@ -122,8 +122,7 @@ const fetchAndProcessEvents = async () => {
   📥 From: [${from}](https://etherscan.io/address/${from})
   📤 To: [${to}](https://etherscan.io/address/${to})
   🔍 [View on Etherscan](https://etherscan.io/tx/${event.transactionHash})
-  💵 Buy From [UniSwap](https://app.uniswap.org/#/swap?outputCurrency=0x556d19ec20f7fffdfbe1a2c2403737ebcded96ca) or [DexTools](https://www.dextools.io/app/en/ether/pair-explorer/0x9505f89b7895c6e2ea4b0c34748caf8d128860ae
-        )
+  💵 Buy From [UniSwap](https://app.uniswap.org/#/swap?outputCurrency=0x556d19ec20f7fffdfbe1a2c2403737ebcded96ca) or [DexTools](https://www.dextools.io/app/en/ether/pair-explorer/0x9505f89b7895c6e2ea4b0c34748caf8d128860ae)
         
   🐤 [Click To Tweet This!](http://twitter.com/intent/tweet?text=Someone%20bought%20${amount}%20$CREPE%20s,%20To%20the%20$MOON!.%20Grab%20your%20Bag!%20https://tinyurl.com/mr266jme)`;
 
