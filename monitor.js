@@ -23,7 +23,6 @@ async function getWETHPriceInUSD() {
   try {
     const response = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd');
     const wethPriceInUSD = response.data.ethereum.usd;
-    console.log(wethPriceInUSD);
     return wethPriceInUSD;
   } catch (error) {
     console.error(error);
@@ -53,7 +52,6 @@ async function getTokenPrice() {
 
     const tokenPriceInWETH = (pairData.token0.symbol === "WETH" || pairData.token0.symbol === "ETH") ? parseFloat(pairData.token0Price) : parseFloat(pairData.token1Price);
 
-    console.log(tokenPriceInWETH);
     return tokenPriceInWETH;
   } catch (error) {
     console.error(error);
